@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { toPng } from 'html-to-image';
 import './styles/styles.css';
-import './styles/design1.css';
+import './styles/design4.css';
 import './styles/mediaQuery.css'
-const CustomDesign1 = () => {
+const CustomDesign4 = () => {
   const containerRef = useRef(null);
   const [sidetext, setSideText] = useState('Experience the luxury of premium water');
   const [contact, setContact] = useState('+123456789');
@@ -13,9 +13,9 @@ const CustomDesign1 = () => {
   const [logoSrc, setLogoSrc] = useState('');
   const [imageFile, setImageFile] = useState(null);
   const [imageSrc, setImageSrc] = useState('');
-  const [primaryColor, setPrimaryColor] = useState('#25497D');
-  const [secondaryColor, setSecondaryColor] = useState('#F7D400');
-  const [bgColor, setBgColor] = useState('#112546');
+  const [primaryColor, setPrimaryColor] = useState('#08062B');
+  const [secondaryColor, setSecondaryColor] = useState('#A9111E');
+
 
   useEffect(() => {
     if (imageFile) {
@@ -141,16 +141,7 @@ const CustomDesign1 = () => {
             />
           </div>
 
-          <div>
-            <label htmlFor="bgColor">Background Color:</label>
-            <input
-              type="color"
-              id="bgColor"
-              name="bgColor"
-              value={bgColor}
-              onChange={(e) => setBgColor(e.target.value)}
-            />
-          </div>
+
 
 
           <button type="submit">Create Poster</button>
@@ -161,13 +152,10 @@ const CustomDesign1 = () => {
           <div className="svg-wrapper">
 
 
-            <div className="svg-box svg-shape0" style={{ backgroundColor: bgColor }}><div className="contact-no">{contact}</div></div>
-            <div className="svg-box svg-shape1" style={{ backgroundImage: imageSrc ? `url(${imageSrc})` : 'none' }}></div>
+             <div className="svg-box svg-d4shape0" style={{ backgroundImage: imageSrc ? `url(${imageSrc})` : 'none' }}></div>
 
-            <div className="svg-box svg-shape3" style={{ backgroundColor: primaryColor }}>
-              <div id="contact-us">CONTACT US</div>
-            </div>
-            <div className="svg-box svg-shape4" style={{ backgroundColor: primaryColor }}>
+            
+            <div className="svg-box svg-d4shape1" style={{ backgroundColor: primaryColor }}>
               <div id="logo">
                 {logoSrc && (
                   <img src={logoSrc} alt="Logo" className="logo-image" />
@@ -175,17 +163,25 @@ const CustomDesign1 = () => {
               </div>
               <br></br>
               <div className='slogan-container'><div className="slogan-text">{slogan}</div></div>
+              <div className='sidetext-container'><div className="sidelabel-text">{sidetext}</div></div>
+              <div className='websitename-container'><div className="website-name">{websiteName}</div></div>
+            
+            
             </div>
 
             <div className='website'>
               {websiteName}
             </div>
 
-            <div className="svg-box svg-shape2" style={{ backgroundColor: secondaryColor }}></div>
-            <div className="svg-box svg-shape5" style={{ backgroundColor: secondaryColor }}>
-              <div className='sidetext-container'><div className="sidelabel-text">{sidetext}</div></div>
-              <div className='websitename-container'><div className="website-name">{websiteName}</div></div>
+            <div className="svg-box svg-d4shape2" style={{ backgroundColor: secondaryColor }}></div>
+            <div className="svg-box svg-d4shape3" style={{ backgroundColor: primaryColor }}>
+              
             </div>
+
+            
+            <div className="svg-box svg-d4shape4" style={{ backgroundColor: secondaryColor }}>
+            <div id="contact-us">Learn More</div>
+              </div>
           </div>
         </div>
 
@@ -196,4 +192,4 @@ const CustomDesign1 = () => {
   );
 };
 
-export default CustomDesign1;
+export default CustomDesign4;

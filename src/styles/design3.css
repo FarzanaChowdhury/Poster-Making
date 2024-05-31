@@ -1,0 +1,131 @@
+
+.svg-d3shape0 {
+    -webkit-mask: url(../images/Design3/picture.svg) no-repeat center;
+    mask: url(../images/Design3/picture.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d3shape1 {
+    background-color: rgb(117, 115, 115);
+    -webkit-mask: url(../images/Design3/bigcurve.svg) no-repeat center;
+    mask: url(../images/Design3/bigcurve.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d3shape2 {
+
+    -webkit-mask: url(../images/Design3/sidecurve.svg) no-repeat center;
+    mask: url(../images/Design3/sidecurve.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d3shape3 {
+
+    -webkit-mask: url(../images/Design3/curve.svg) no-repeat center;
+    mask: url(../images/Design3/curve.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d3shape4 {
+
+    -webkit-mask: url(../images/Design3/rect.svg) no-repeat center;
+    mask: url(../images/Design3/rect.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .sidetext-container3{
+    position: absolute;
+    top: 40%; 
+    left: 6%; 
+    max-width: 18vw;
+    
+
+  }
+  .sidelabel-text3 {
+    font-size: 1.3vw; 
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    margin: 2%;
+    
+  }
+
+  .slogan-container3{
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    display: flex;
+    align-items: center;
+    height: 14vw;
+    max-width: 15vw;
+  }
+  .slogan-text3 {
+
+    /* transform: translate(-50%, -50%); */
+    font-size: 2vw;
+    color: white;
+    z-index: 10;
+    margin: 2%;
+    word-wrap: break-word;
+  }
+
+  #logo{
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    color: white;
+    z-index: 20;
+    margin: 2%;
+    width: 10.4vw;
+    height: 2.6vw;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  #logo img{
+    height: 100%;
+    width: auto;
+  }
+
+  .learn-container{
+    position: absolute;
+    top: 66%; 
+    left: 9%; 
+    width: 25vw;
+  }
+
+  #learn{
+    font-size: 1.8vw; 
+    color: rgb(249, 249, 249);
+    z-index: 10;
+    margin: 2%;
+  }
+
+  .contact-no3{
+    position: absolute;
+    top: 75%;
+    left: 6%;
+    font-size: 1.3vw; 
+    color: white;
+    z-index: 20;
+    margin: 2%;
+    max-width: 10.4vw;
+    display: flex;
+  }
+
+  .website-name{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    display: flex;
+    max-width: 10.4vw;
+    font-size: 1.3vw; 
+    color: white;
+    z-index: 20;
+    margin: 2%;
+    
+    
+
+  }
+

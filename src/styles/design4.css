@@ -1,0 +1,128 @@
+
+.svg-d4shape0 {
+    -webkit-mask: url(../images/Design4/Picture4.svg) no-repeat center;
+    mask: url(../images/Design4/Picture4.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d4shape1 {
+    background-color: rgb(117, 115, 115);
+    -webkit-mask: url(../images/Design4/bluedesign.svg) no-repeat center;
+    mask: url(../images/Design4/bluedesign.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d4shape2 {
+
+    -webkit-mask: url(../images/Design4/darkblue.svg) no-repeat center;
+    mask: url(../images/Design4/darkblue.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d4shape3 {
+
+    -webkit-mask: url(../images/Design4/orange.svg) no-repeat center;
+    mask: url(../images/Design4/orange.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d4shape4 {
+
+    -webkit-mask: url(../images/Design4/footer.svg) no-repeat center;
+    mask: url(../images/Design4/footer.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .sidetext-container4{
+    position: absolute;
+    top: 55%; 
+    left: 5%; 
+    max-width: 18vw;
+    
+
+  }
+  .sidelabel-text4 {
+    font-size: 1.5vw; 
+    color: black;
+    z-index: 10;
+    margin: 2%;
+    
+  }
+
+  .slogan-container4{
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    display: flex;
+    align-items: center;
+    height: 14vw;
+    max-width: 15vw;
+  }
+  .slogan-text4 {
+
+    /* transform: translate(-50%, -50%); */
+    font-size: 2vw;
+    color: white;
+    z-index: 10;
+    margin: 2%;
+    word-wrap: break-word;
+  }
+
+  #logo{
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    color: white;
+    z-index: 20;
+    margin: 2%;
+    width: 10.4vw;
+    height: 2.6vw;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  #logo img{
+    height: 100%;
+    width: auto;
+  }
+
+  
+  #contact-us{
+    position: absolute;
+    top: 8%;
+    left: 69%;
+    font-size: 1.2vw; 
+    color: #F6CF08;
+    z-index: 10;
+    margin: 2%;
+    max-width: 300px;
+  }
+
+  .contact-no{
+    position: absolute;
+    top: 17%;
+    left: 70%;
+    font-size: 1.3vw; 
+    color: white;
+    z-index: 20;
+    margin: 2%;
+    max-width: 10.4vw;
+  }
+
+  .websitename-container{
+    display: flex;
+    align-items: center;
+  }
+  .website{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+   
+    font-size: 1.3vw; 
+    color: white;
+    z-index: 20;
+    margin: 2%;
+    max-width: 10.4vw;
+    
+
+  }
