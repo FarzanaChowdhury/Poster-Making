@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { toPng } from 'html-to-image';
 import './styles.css';
-
+import './mediaQuery.css'
 const CustomPoster = () => {
   const containerRef = useRef(null);
   const [sidetext, setSideText] = useState('');
@@ -49,6 +49,7 @@ const CustomPoster = () => {
   };
 
   return (
+    
     <div className="flex-container">
       <div className="form-container">
         <form onSubmit={handleFormSubmit}>
@@ -85,8 +86,7 @@ const CustomPoster = () => {
 
           <div>
           <label htmlFor="slogan">Slogan: </label>
-          <input
-            type="text"
+          <textarea
             id="slogan"
             name="slogan"
             value={slogan}
@@ -139,6 +139,10 @@ const CustomPoster = () => {
               <div className="slogan-text">{slogan}</div>
             </div>
 
+            <div className='website'>
+              {websiteName}
+            </div>
+
             <div className="svg-box svg-shape2"></div>
             <div className="svg-box svg-shape5">
               <div className="sidelabel-text">{sidetext}</div>
@@ -149,7 +153,7 @@ const CustomPoster = () => {
         
         
       </div>
-      <button onClick={handleDownload}>Download Poster</button>
+      <button className='download' onClick={handleDownload}>Download Poster</button>
     </div>
   );
 };

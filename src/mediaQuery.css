@@ -1,0 +1,18 @@
+@media only screen and (max-width: 768px){
+    .flex-container {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form-container{
+        width: 55%;
+      }
+
+      .svg-wrapper{
+        width: 50vw;
+        height: 50vw;
+        
+      }
+      
+}

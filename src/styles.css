@@ -1,3 +1,6 @@
+body{
+  background-color: #e8eefa;
+}
 /* Container to hold both form and poster */
 .flex-container {
   display: flex;
@@ -9,7 +12,8 @@
 .form-container {
   width: 40%; /* Adjust width as needed */
   padding: 20px;
-  background-color: #f0f0f0; /* Optional: Add background color for better visibility */
+  margin: 20px;
+  background-color: #f8fafe; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -20,13 +24,13 @@
 
 .svg-container {
     position: relative;
-    width: 600px;
+    width: 100%;
 
   }
   .svg-wrapper{
     position: relative;
-    width: 600px;
-    min-height: 600px;
+    width: 40vw;
+    height: 40vw;
     background-color: #112546;
     /* top: 50px;
     margin: auto; */
@@ -121,7 +125,7 @@
     top: 55%; 
     left: 5%; 
     /*transform: translate(-50%, -50%); */
-    font-size: 20px; 
+    font-size: 1vw; 
     color: black;
     z-index: 10;
     margin: 2%;
@@ -132,11 +136,11 @@
     top: 15%;
     left: 12%;
     /* transform: translate(-50%, -50%); */
-    font-size: 38px;
+    font-size: 2vw;
     color: white;
     z-index: 10;
     margin: 2%;
-    max-width: 290px;
+    max-width: 15vw;
     word-wrap: break-word;
   }
 
@@ -147,8 +151,8 @@
     color: white;
     z-index: 20;
     margin: 2%;
-    width: 200px;
-    height: 50px;
+    width: 10.4vw;
+    height: 2.6vw;
     overflow: hidden;
     object-fit: cover;
   }
@@ -160,8 +164,10 @@
 
   
   #contact-us{
-    transform: translate(136%, 222%);
-    font-size: 20px; 
+    position: absolute;
+    top: 8%;
+    left: 69%;
+    font-size: 1.2vw; 
     color: #F6CF08;
     z-index: 10;
     margin: 2%;
@@ -172,9 +178,43 @@
     position: absolute;
     top: 17%;
     left: 70%;
-    font-size: 20px; 
+    font-size: 1.3vw; 
     color: white;
     z-index: 20;
     margin: 2%;
-    max-width: 200px;
+    max-width: 10.4vw;
+  }
+
+  .website{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    font-size: 1.3vw; 
+    color: white;
+    z-index: 20;
+    margin: 2%;
+    max-width: 10.4vw;
+
+  }
+
+
+  textarea{
+    vertical-align: top;
+    margin-bottom: 10px;
+    background-color: #e7edf6;
+    border-width: 0.01cap;
+  }
+
+  input{
+    margin-bottom: 10px;
+    background-color: #e7edf6;
+    border-width: 0.01cap;
+  }
+
+  button{
+    background-color: #46639c;
+    color: white;
+    padding: 5px;
+    border-radius: 5%;
+    stroke: none;
   }
