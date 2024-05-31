@@ -6,12 +6,13 @@ import './styles/mediaQuery.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
 const CustomDesign3 = () => {
     const containerRef = useRef(null);
     const [sidetext, setSideText] = useState('Experience the luxury of premium water');
     const [contact, setContact] = useState('+123456789');
-    const [websiteName, setWebsiteName] = useState('gootsite.com');
+    const [websiteName, setWebsiteName] = useState('goodsite.com');
     const [slogan, setSlogan] = useState('Best Digital Agency');
     const [logoFile, setLogoFile] = useState(null);
     const [logoSrc, setLogoSrc] = useState('');
@@ -156,7 +157,9 @@ const CustomDesign3 = () => {
                     <div className="svg-wrapper">
 
 
-                        <div className="svg-box svg-d3shape0" style={{ backgroundImage: imageSrc ? `url(${imageSrc})` : 'none' }}></div>
+                        <div className="svg-box svg-d3shape0" style={{ backgroundImage: imageSrc ? `url(${imageSrc})` : 'none' }}>
+                            {!imageSrc && <FontAwesomeIcon className="camera" icon={faCamera} />}
+                        </div>
 
 
                         <div className="svg-box svg-d3shape1" style={{ backgroundColor: primaryColor }}>
@@ -164,6 +167,9 @@ const CustomDesign3 = () => {
                                 {logoSrc && (
                                     <img src={logoSrc} alt="Logo" className="logo-image" />
                                 )}
+
+                                {!logoSrc && <FontAwesomeIcon className="logo-camera" icon={faCamera} />}
+
                             </div>
                             <br></br>
                             <div className='slogan-container3'><div className="slogan-text3">{slogan}</div></div>
@@ -185,13 +191,13 @@ const CustomDesign3 = () => {
               {websiteName}
             </div> */}
 
-                        <div className="svg-box svg-d3shape2" style={{ backgroundColor: secondaryColor }}></div>
+                        <div className="svg-box svg-d3shape2" style={{ backgroundImage: `linear-gradient(to left, ${secondaryColor}, ${primaryColor})`}}></div>
                         <div className="svg-box svg-d3shape3" style={{ backgroundColor: primaryColor }}>
 
                         </div>
 
+<div className="svg-box svg-d3shape4" style={{ backgroundImage: `linear-gradient(to left, ${secondaryColor}, ${primaryColor})` }}>
 
-                        <div className="svg-box svg-d3shape4" style={{ backgroundColor: secondaryColor }}>
                             <div className='learn-container'><div id="learn">Learn More</div></div>
                         </div>
                     </div>

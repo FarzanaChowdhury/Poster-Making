@@ -12,7 +12,7 @@ body{
 .form-container {
   width: 40%; /* Adjust width as needed */
   padding: 20px;
-  margin: 20px;
+  margin: 30px;
   background-color: #f8fafe; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -112,4 +112,18 @@ input[type="file"] {
     padding: 5px;
     border-radius: 5%;
     stroke: none;
+  }
+
+  .camera{
+    position: absolute;
+    width: 8vw;
+    height: auto;
+    color:#444547
+  }
+
+  .logo-camera{
+    position: absolute;
+    width: 1.5vw; 
+    height: auto;
+    color:#1a1818
   }

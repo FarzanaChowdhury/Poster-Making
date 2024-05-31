@@ -31,11 +31,12 @@
     -webkit-mask: url(../images/Design3/rect.svg) no-repeat center;
     mask: url(../images/Design3/rect.svg) no-repeat center;
     mask-size: contain;
+
   }
 
   .sidetext-container3{
     position: absolute;
-    top: 40%; 
+    top: 35%; 
     left: 6%; 
     max-width: 18vw;
     
@@ -51,7 +52,7 @@
 
   .slogan-container3{
     position: absolute;
-    top: 15%;
+    top: 8%;
     left: 6%;
     display: flex;
     align-items: center;
@@ -68,10 +69,10 @@
     word-wrap: break-word;
   }
 
-  #logo{
+.svg-d3shape1 #logo{
     position: absolute;
     top: 8%;
-    left: 6%;
+    left: 4%;
     color: white;
     z-index: 20;
     margin: 2%;
@@ -124,8 +125,14 @@
     color: white;
     z-index: 20;
     margin: 2%;
-    
-    
 
   }
 
+.svg-d3shape0 .camera{
+    top: 38%;
+    left: 70%;
+}
+
+.svg-d3shape1 .logo-camera{
+    color: rgb(105, 106, 107);
+}

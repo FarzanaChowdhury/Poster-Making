@@ -1,13 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { toPng } from 'html-to-image';
 import './styles/styles.css';
-import './styles/design4.css';
+import './styles/design2.css';
 import './styles/mediaQuery.css'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCamera } from '@fortawesome/free-solid-svg-icons';
-
-const CustomDesign4 = () => {
+import { faCamera} from '@fortawesome/free-solid-svg-icons';
+const CustomDesign2 = () => {
   const containerRef = useRef(null);
   const [sidetext, setSideText] = useState('Experience the luxury of premium water');
   const [contact, setContact] = useState('+123456789');
@@ -17,9 +15,9 @@ const CustomDesign4 = () => {
   const [logoSrc, setLogoSrc] = useState('');
   const [imageFile, setImageFile] = useState(null);
   const [imageSrc, setImageSrc] = useState('');
-  const [primaryColor, setPrimaryColor] = useState('#08062B');
-  const [secondaryColor, setSecondaryColor] = useState('#A9111E');
-
+  const [primaryColor, setPrimaryColor] = useState('#25497D');
+  const [secondaryColor, setSecondaryColor] = useState('#F7D400');
+  const [bgColor, setBgColor] = useState('#112546');
 
   useEffect(() => {
     if (imageFile) {
@@ -145,7 +143,16 @@ const CustomDesign4 = () => {
             />
           </div>
 
-
+          <div>
+            <label htmlFor="bgColor">Background Color:</label>
+            <input
+              type="color"
+              id="bgColor"
+              name="bgColor"
+              value={bgColor}
+              onChange={(e) => setBgColor(e.target.value)}
+            />
+          </div>
 
 
           <button type="submit">Create Poster</button>
@@ -156,43 +163,40 @@ const CustomDesign4 = () => {
           <div className="svg-wrapper">
 
 
-             <div className="svg-box svg-d4shape0" style={{ backgroundImage: imageSrc ? `url(${imageSrc})` : 'none' }}>
-
-             {!imageSrc && <FontAwesomeIcon className="camera" icon={faCamera} />}
+            <div className="svg-box svg-shape0" style={{ backgroundColor: bgColor }}><div className="contact-no">{contact}</div>
             
-             </div>
+            </div>
+            <div className="svg-box svg-shape1" style={{ backgroundImage: imageSrc ? `url(${imageSrc})` : 'none' }}>
+            <div>
+    {!imageSrc && <FontAwesomeIcon className="camera" icon={faCamera} />}
+  </div>
 
-            
-            <div className="svg-box svg-d4shape1" style={{ backgroundColor: primaryColor }}>
+            </div>
+
+            <div className="svg-box svg-shape3" style={{ backgroundColor: primaryColor }}>
+              <div id="contact-us">CONTACT US</div>
+            </div>
+            <div className="svg-box svg-shape4" style={{ backgroundColor: primaryColor }}>
               <div id="logo">
                 {logoSrc && (
                   <img src={logoSrc} alt="Logo" className="logo-image" />
                 )}
-
-{!logoSrc && <FontAwesomeIcon className="logo-camera" icon={faCamera} />}
+     {!logoSrc && <FontAwesomeIcon className="logo-camera" icon={faCamera} />}
 
               </div>
               <br></br>
               <div className='slogan-container'><div className="slogan-text">{slogan}</div></div>
-              <div className='sidetext-container'><div className="sidelabel-text">{sidetext}</div></div>
-              <div className='websitename-container'><div className="website-name">{websiteName}</div></div>
-            
-            
             </div>
 
             <div className='website'>
               {websiteName}
             </div>
 
-            <div className="svg-box svg-d4shape2" style={{ backgroundColor: secondaryColor }}></div>
-            <div className="svg-box svg-d4shape3" style={{ backgroundColor: primaryColor }}>
-              
+            <div className="svg-box svg-shape2" style={{ backgroundColor: secondaryColor }}></div>
+            <div className="svg-box svg-shape5" style={{ backgroundColor: secondaryColor }}>
+              <div className='sidetext-container'><div className="sidelabel-text">{sidetext}</div></div>
+              <div className='websitename-container'><div className="website-name">{websiteName}</div></div>
             </div>
-
-            
-            <div className="svg-box svg-d4shape4" style={{ backgroundColor: secondaryColor }}>
-            <div id="contact-us">Learn More</div>
-              </div>
           </div>
         </div>
 
@@ -203,4 +207,4 @@ const CustomDesign4 = () => {
   );
 };
 
-export default CustomDesign4;
+export default CustomDesign2;
