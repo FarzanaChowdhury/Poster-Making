@@ -127,3 +127,15 @@ input[type="file"] {
     height: auto;
     color:#1a1818
   }
+
+  .company-name{
+    position: absolute;
+    width: 18vw;
+    height: 5vw;
+    font-size: 1.8vw;
+  }
+
+  .logo-container{
+    display: flex;
+
+  }

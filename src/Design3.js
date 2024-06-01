@@ -18,6 +18,8 @@ const CustomDesign3 = () => {
     const [logoSrc, setLogoSrc] = useState('');
     const [imageFile, setImageFile] = useState(null);
     const [imageSrc, setImageSrc] = useState('');
+    const [action, setAction] = useState('Learn More');
+    const [name, setCompanyName] = useState('Best Digital Agency');
     const [primaryColor, setPrimaryColor] = useState('#08062B');
     const [secondaryColor, setSecondaryColor] = useState('#A9111E');
 
@@ -62,8 +64,18 @@ const CustomDesign3 = () => {
         <div className="flex-container">
             <div className="form-container">
                 <form onSubmit={handleFormSubmit}>
+                <div>
+                        <label htmlFor="slogan">Heading: </label>
+                        <textarea
+                            id="slogan"
+                            name="slogan"
+                            value={slogan}
+                            onChange={(e) => setSlogan(e.target.value)}
+                        />
+                    </div>
+
                     <div>
-                        <label htmlFor="sidetext">Side Label Text: </label>
+                        <label htmlFor="sidetext">Subheading: </label>
                         <textarea
                             id="sidetext"
                             name="sidetext"
@@ -72,18 +84,20 @@ const CustomDesign3 = () => {
                         />
                     </div>
 
+
                     <div>
-                        <label htmlFor="contact">Contact: </label>
+                        <label htmlFor="logo">Action Button: </label>
                         <input
                             type="text"
-                            id="contact"
-                            name="contact"
-                            value={contact}
-                            onChange={(e) => setContact(e.target.value)}
+                            id="action"
+                            name="action"
+                            value={action}
+                            onChange={(e) => setAction(e.target.value)}
                         />
                     </div>
+
                     <div>
-                        <label htmlFor="websiteName">Website Name: </label>
+                        <label htmlFor="websiteName">Email Address: </label>
                         <input
                             type="text"
                             id="websiteName"
@@ -94,22 +108,37 @@ const CustomDesign3 = () => {
                     </div>
 
                     <div>
-                        <label htmlFor="slogan">Slogan: </label>
-                        <textarea
-                            id="slogan"
-                            name="slogan"
-                            value={slogan}
-                            onChange={(e) => setSlogan(e.target.value)}
+                        <label htmlFor="contact">Phone Number: </label>
+                        <input
+                            type="text"
+                            id="contact"
+                            name="contact"
+                            value={contact}
+                            onChange={(e) => setContact(e.target.value)}
                         />
                     </div>
 
+
+
+
                     <div>
-                        <label htmlFor="logo">Logo Image: </label>
+                        <label htmlFor="logo">Company Logo: </label>
                         <input
                             type="file"
                             id="logo-input"
                             name="logo"
                             onChange={(e) => setLogoFile(e.target.files[0])}
+                        />
+                    </div>
+
+                    <div>
+                        <label htmlFor="name">Company Name: </label>
+                        <input
+                            type="text"
+                            id="company-name"
+                            name="company-name"
+                            value={name}
+                            onChange={(e) => setCompanyName(e.target.value)}
                         />
                     </div>
 
@@ -148,7 +177,6 @@ const CustomDesign3 = () => {
 
 
 
-
                     <button type="submit">Create Poster</button>
                 </form>
             </div>
@@ -162,7 +190,7 @@ const CustomDesign3 = () => {
                         </div>
 
 
-                        <div className="svg-box svg-d3shape1" style={{ backgroundColor: primaryColor }}>
+                        <div className="logo-container svg-box svg-d3shape1" style={{ backgroundColor: primaryColor }}>
                             <div id="logo">
                                 {logoSrc && (
                                     <img src={logoSrc} alt="Logo" className="logo-image" />
@@ -171,7 +199,10 @@ const CustomDesign3 = () => {
                                 {!logoSrc && <FontAwesomeIcon className="logo-camera" icon={faCamera} />}
 
                             </div>
+
+                            <div className='company-name'><div className="company">{name}</div></div>
                             <br></br>
+
                             <div className='slogan-container3'><div className="slogan-text3">{slogan}</div></div>
                             <div className='sidetext-container3'><div className="sidelabel-text3">{sidetext}</div></div>
 
@@ -198,7 +229,7 @@ const CustomDesign3 = () => {
 
 <div className="svg-box svg-d3shape4" style={{ backgroundImage: `linear-gradient(to left, ${secondaryColor}, ${primaryColor})` }}>
 
-                            <div className='learn-container'><div id="learn">Learn More</div></div>
+                            <div className='learn-container'><div id="learn">{action}</div></div>
                         </div>
                     </div>
                 </div>

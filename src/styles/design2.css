@@ -77,7 +77,7 @@
     word-wrap: break-word;
   }
 
-  #logo{
+  .svg-shape4 #logo{
     position: absolute;
     top: 8%;
     left: 5%;
@@ -98,16 +98,16 @@
   
   #contact-us{
     position: absolute;
-    top: 8%;
-    left: 69%;
-    font-size: 1.2vw; 
+    top: 7.5%;
+    left: 70%;
+    font-size: 1.5vw; 
     color: #F6CF08;
     z-index: 10;
     margin: 2%;
     max-width: 300px;
   }
 
-  .contact-no{
+  .svg-shape0 .contact-no{
     position: absolute;
     top: 17%;
     left: 70%;
@@ -140,3 +140,10 @@
     top: 58%;
     left: 70%;
   }
+
+  .svg-shape4 .company-name{
+    color: aliceblue;
+    left: 18%;
+    top: 12%;
+    font-size: 1.5vw;
+    }

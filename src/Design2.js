@@ -15,6 +15,8 @@ const CustomDesign2 = () => {
   const [logoSrc, setLogoSrc] = useState('');
   const [imageFile, setImageFile] = useState(null);
   const [imageSrc, setImageSrc] = useState('');
+  const [action, setAction] = useState('Learn More');
+  const [name, setCompanyName] = useState('Best Digital Agency');
   const [primaryColor, setPrimaryColor] = useState('#25497D');
   const [secondaryColor, setSecondaryColor] = useState('#F7D400');
   const [bgColor, setBgColor] = useState('#112546');
@@ -59,89 +61,116 @@ const CustomDesign2 = () => {
     <div className="flex-container">
       <div className="form-container">
         <form onSubmit={handleFormSubmit}>
-          <div>
-            <label htmlFor="sidetext">Side Label Text: </label>
-            <textarea
-              id="sidetext"
-              name="sidetext"
-              value={sidetext}
-              onChange={(e) => setSideText(e.target.value)}
-            />
-          </div>
+        <div>
+                        <label htmlFor="slogan">Heading: </label>
+                        <textarea
+                            id="slogan"
+                            name="slogan"
+                            value={slogan}
+                            onChange={(e) => setSlogan(e.target.value)}
+                        />
+                    </div>
 
-          <div>
-            <label htmlFor="contact">Contact: </label>
-            <input
-              type="text"
-              id="contact"
-              name="contact"
-              value={contact}
-              onChange={(e) => setContact(e.target.value)}
-            />
-          </div>
-          <div>
-            <label htmlFor="websiteName">Website Name: </label>
-            <input
-              type="text"
-              id="websiteName"
-              name="websiteName"
-              value={websiteName}
-              onChange={(e) => setWebsiteName(e.target.value)}
-            />
-          </div>
+                    <div>
+                        <label htmlFor="sidetext">Subheading: </label>
+                        <textarea
+                            id="sidetext"
+                            name="sidetext"
+                            value={sidetext}
+                            onChange={(e) => setSideText(e.target.value)}
+                        />
+                    </div>
 
-          <div>
-            <label htmlFor="slogan">Slogan: </label>
-            <textarea
-              id="slogan"
-              name="slogan"
-              value={slogan}
-              onChange={(e) => setSlogan(e.target.value)}
-            />
-          </div>
 
-          <div>
-            <label htmlFor="logo">Logo Image: </label>
-            <input
-              type="file"
-              id="logo-input"
-              name="logo"
-              onChange={(e) => setLogoFile(e.target.files[0])}
-            />
-          </div>
+                    <div>
+                        <label htmlFor="logo">Action Button: </label>
+                        <input
+                            type="text"
+                            id="action"
+                            name="action"
+                            value={action}
+                            onChange={(e) => setAction(e.target.value)}
+                        />
+                    </div>
 
-          <div>
+                    <div>
+                        <label htmlFor="websiteName">Email Address: </label>
+                        <input
+                            type="text"
+                            id="websiteName"
+                            name="websiteName"
+                            value={websiteName}
+                            onChange={(e) => setWebsiteName(e.target.value)}
+                        />
+                    </div>
 
-            <label htmlFor="image">Background Image: </label>
-            <input
-              type="file"
-              id="image"
-              name="image"
-              onChange={(e) => setImageFile(e.target.files[0])}
-            />
-          </div>
+                    <div>
+                        <label htmlFor="contact">Phone Number: </label>
+                        <input
+                            type="text"
+                            id="contact"
+                            name="contact"
+                            value={contact}
+                            onChange={(e) => setContact(e.target.value)}
+                        />
+                    </div>
 
-          <div>
-            <label htmlFor="primaryColor">Primary Color:</label>
-            <input
-              type="color"
-              id="primaryColor"
-              name="primaryColor"
-              value={primaryColor}
-              onChange={(e) => setPrimaryColor(e.target.value)}
-            />
-          </div>
 
-          <div>
-            <label htmlFor="secondaryColor">Secondary Color:</label>
-            <input
-              type="color"
-              id="secondaryColor"
-              name="secondaryColor"
-              value={secondaryColor}
-              onChange={(e) => setSecondaryColor(e.target.value)}
-            />
-          </div>
+
+
+                    <div>
+                        <label htmlFor="logo">Company Logo: </label>
+                        <input
+                            type="file"
+                            id="logo-input"
+                            name="logo"
+                            onChange={(e) => setLogoFile(e.target.files[0])}
+                        />
+                    </div>
+
+                    <div>
+                        <label htmlFor="name">Company Name: </label>
+                        <input
+                            type="text"
+                            id="company-name"
+                            name="company-name"
+                            value={name}
+                            onChange={(e) => setCompanyName(e.target.value)}
+                        />
+                    </div>
+
+                    <div>
+
+                        <label htmlFor="image">Background Image: </label>
+                        <input
+                            type="file"
+                            id="image"
+                            name="image"
+                            onChange={(e) => setImageFile(e.target.files[0])}
+                        />
+                    </div>
+
+                    <div>
+                        <label htmlFor="primaryColor">Primary Color:</label>
+                        <input
+                            type="color"
+                            id="primaryColor"
+                            name="primaryColor"
+                            value={primaryColor}
+                            onChange={(e) => setPrimaryColor(e.target.value)}
+                        />
+                    </div>
+
+                    <div>
+                        <label htmlFor="secondaryColor">Secondary Color:</label>
+                        <input
+                            type="color"
+                            id="secondaryColor"
+                            name="secondaryColor"
+                            value={secondaryColor}
+                            onChange={(e) => setSecondaryColor(e.target.value)}
+                        />
+                    </div>
 
           <div>
             <label htmlFor="bgColor">Background Color:</label>
@@ -174,9 +203,9 @@ const CustomDesign2 = () => {
             </div>
 
             <div className="svg-box svg-shape3" style={{ backgroundColor: primaryColor }}>
-              <div id="contact-us">CONTACT US</div>
+              <div id="contact-us">{action}</div>
             </div>
-            <div className="svg-box svg-shape4" style={{ backgroundColor: primaryColor }}>
+            <div className="logo-container svg-box svg-shape4" style={{ backgroundColor: primaryColor }}>
               <div id="logo">
                 {logoSrc && (
                   <img src={logoSrc} alt="Logo" className="logo-image" />
@@ -184,6 +213,9 @@ const CustomDesign2 = () => {
      {!logoSrc && <FontAwesomeIcon className="logo-camera" icon={faCamera} />}
 
               </div>
+
+              <div className='company-name'><div className="company">{name}</div></div>
+                            
               <br></br>
               <div className='slogan-container'><div className="slogan-text">{slogan}</div></div>
             </div>

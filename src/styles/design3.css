@@ -136,3 +136,10 @@
 .svg-d3shape1 .logo-camera{
     color: rgb(105, 106, 107);
 }
+
+.svg-d3shape1 .company-name{
+color: aliceblue;
+left: 15%;
+top: 10%;
+font-size: 1.4vw;
+}

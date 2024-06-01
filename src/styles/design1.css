@@ -1,0 +1,140 @@
+.svg-d1shape0 {
+    -webkit-mask: url(../images/Design1/background.svg) no-repeat center;
+    mask: url(../images/Design1/background.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d1shape1 {
+    background-color: rgb(117, 115, 115);
+    -webkit-mask: url(../images/Design1/picture1.svg) no-repeat center;
+    mask: url(../images/Design1/picture1.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d1shape2 {
+
+    -webkit-mask: url(../images/Design1/sidedesign.svg) no-repeat center;
+    mask: url(../images/Design1/sidedesign.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+  .svg-d1shape3 {
+
+    -webkit-mask: url(../images/Design1/rectangle.svg) no-repeat center;
+    mask: url(../images/Design1/rectangle.svg) no-repeat center;
+    mask-size: contain;
+  }
+
+
+  .svg-d1shape0 .sidetext-container{
+    position: absolute;
+    top: 35%; 
+    left: 5%; 
+    max-width: 18vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    
+
+  }
+  .svg-d1shape0 .sidelabel-text {
+    font-size: 1.5vw; 
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    margin: 2%;
+    
+  }
+
+  .svg-d1shape0 .slogan-container{
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 14vw;
+    max-width: 16vw;
+  }
+  .svg-d1shape0 .slogan-text {
+
+    /* transform: translate(-50%, -50%); */
+    font-size: 2vw;
+    color: white;
+    z-index: 10;
+    margin: 2%;
+    max-height: 100%;
+    word-wrap: break-word;
+  }
+
+  .svg-d1shape0 #logo{
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    color: white;
+    z-index: 20;
+    margin: 2%;
+    width: 10.4vw;
+    height: 2.6vw;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  #logo img{
+    height: 100%;
+    width: auto;
+  }
+
+  
+  #contact-us{
+    position: absolute;
+    top: 8%;
+    left: 69%;
+    font-size: 1.2vw; 
+    color: #F6CF08;
+    z-index: 10;
+    margin: 2%;
+    max-width: 300px;
+  }
+
+  .svg-d1shape0 .contact-no{
+    position: absolute;
+    top: 85%;
+    left: 6%;
+    font-size: 1.3vw; 
+    color: white;
+    z-index: 10;
+    margin: 2%;
+    max-width: 10.4vw;
+
+    
+  }
+
+  .svg-d1shape0 .websitename-container{
+    display: flex;
+    align-items: center;
+  }
+  .svg-d1shape0 .website{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+   
+    font-size: 1.3vw; 
+    color: white;
+    z-index: 20;
+    margin: 2%;
+    max-width: 10.4vw;
+    
+
+  }
+
+  .svg-d1shape1 .camera{
+    top: 40%;
+    left: 63%;
+  }
+
+  .svg-d1shape0 .company-name{
+    color: aliceblue;
+    left: 15%;
+    top: 10%;
+    font-size: 1.3vw;
+    }
