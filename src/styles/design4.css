@@ -43,7 +43,7 @@
   }
   .svg-d4shape2 .sidelabel-text{
     font-size: 1.5vw; 
-    color: black;
+    color: rgb(255, 255, 255);
     z-index: 10;
     margin: 2%;
     

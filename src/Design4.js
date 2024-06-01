@@ -21,8 +21,9 @@ const CustomDesign4 = () => {
   const [imageSrc, setImageSrc] = useState('');
   const [action, setAction] = useState('Learn More');
   const [name, setCompanyName] = useState('Best Digital Agency');
-  const [primaryColor, setPrimaryColor] = useState('#08062B');
-  const [secondaryColor, setSecondaryColor] = useState('#A9111E');
+  const [primaryColor, setPrimaryColor] = useState('#13367A');
+  const [secondaryColor, setSecondaryColor] = useState('#FC902E');
+  const [bgColor, setbgColor] = useState('#1C2449');
 
 
   useEffect(() => {
@@ -175,7 +176,16 @@ const CustomDesign4 = () => {
                             onChange={(e) => setSecondaryColor(e.target.value)}
                         />
                     </div>
-
+                    <div>
+                        <label htmlFor="bgColor">Background Color:</label>
+                        <input
+                            type="color"
+                            id="bgColor"
+                            name="secondaryColor"
+                            value={bgColor}
+                            onChange={(e) => setbgColor(e.target.value)}
+                        />
+                    </div>
 
 
 
@@ -212,17 +222,17 @@ const CustomDesign4 = () => {
             
             </div>
 
-            <div className="svg-box svg-d4shape2" style={{ backgroundColor: secondaryColor }}>
-            <div className='slogan-container'><div className="slogan-text">{slogan}</div></div>
+            <div className="svg-box svg-d4shape2" style={{ backgroundColor: bgColor }}>
+            <div className='slogan-container'><div className="slogan-text" style={{color: secondaryColor}}>{slogan}</div></div>
               <div className='sidetext-container'><div className="sidelabel-text">{sidetext}</div></div>
               
               </div>
 
 
 
-           {/* <div className="svg-box svg-d4shape3" style={{ backgroundColor: primaryColor }}>
+           <div className="svg-box svg-d4shape3" style={{ backgroundColor: secondaryColor }}>
               
-            </div> */}
+            </div>
 
             
             <div className="svg-box svg-d4shape4" style={{ backgroundColor: 'white' }}>

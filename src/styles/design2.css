@@ -96,7 +96,7 @@
   }
 
   
-  #contact-us{
+  .svg-shape3 #contact-us{
     position: absolute;
     top: 7.5%;
     left: 70%;
@@ -144,6 +144,6 @@
   .svg-shape4 .company-name{
     color: aliceblue;
     left: 18%;
-    top: 12%;
+    top: 10%;
     font-size: 1.5vw;
     }
